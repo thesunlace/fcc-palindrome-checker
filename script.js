@@ -5,5 +5,7 @@ const result = document.getElementById('result');
 checkButton.addEventListener("click", () => {
     if (textInput.value === "") {
         alert("Please input a value")
+    } else if (textInput.value.length === 1) {
+        result.innerText = `${textInput.value} is a palindrome`
     }
 })
